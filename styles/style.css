@@ -1,16 +1,10 @@
+*,
 html {
   font-size: 12px; /* px means "pixels": the base font size is now 10 pixels high  */
   font-family: "Source Sans Pro"; /* this should be the rest of the output you got from Google fonts */
-  background-color: #da4 !important;
-}
-
-body {
-  /* width: 600px; */
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #da4;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
+  /* background-color: #da4 !important; */
+  margin: 0;
+  padding: 0;
 }
 
 /* START headers */
@@ -35,7 +29,66 @@ h3 {
   font-weight: 100;
   /* line-height: 1.2; */
 }
+h4 {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 20px;
+  text-align: left;
+}
 /* END headers */
+
+.section1 {
+  background-color: #462115;
+  max-height: 300px;
+}
+.section1 img.logo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  object-fit: contain;
+  max-height: inherit;
+}
+
+.section2 {
+  background-color: #da4;
+  padding: 0 20px 20px 20px;
+}
+/* .section2 p { */
+/* margin: 20 20px 20px 20px; */
+/* padding: 0 30px 30px 30px; */
+/* } */
+
+.section3 {
+  background-color: #632f1e;
+  color: aliceblue;
+}
+.section3 h1 {
+  font-family: "Pirata One", cursive;
+  font-size: xxx-large;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #ddaa44;
+}
+.section3 h2 {
+  color: aliceblue;
+  font-weight: normal;
+}
+.section3 h3 {
+  font-size: xx-large;
+}
+.section4 {
+  background-color: #555;
+  color: #ddaa44;
+}
+
+/* body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 0px 20px 0px;
+} */
 
 p,
 li {
@@ -45,17 +98,10 @@ li {
 }
 
 /* START images*/
-img.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  background-color: #462115;
-}
-img.float-right {
+.float-right {
   float: right;
 }
-img.banner {
+.divider {
   width: 100%;
 }
 /* END images*/
