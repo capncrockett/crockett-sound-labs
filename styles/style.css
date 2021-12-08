@@ -1,6 +1,6 @@
 *,
 html {
-    font-size: 12px;
+    font-size: 18px;
     /* px means "pixels": the base font size is now 10 pixels high  */
     font-family: "Source Sans Pro";
     /* this should be the rest of the output you got from Google fonts */
@@ -9,35 +9,39 @@ html {
     padding: 0;
 }
 
+body {
+    padding: 0 0px 20px 0px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    font-family: "Pirata One", cursive;
+    text-align: left;
+}
+
 /* START headers */
 h1 {
     margin: 0;
     padding: 20px 0;
     /* color: #da4; */
     /* font-size: 20px; */
-    text-align: left;
-    /* text-shadow: 1px 1px 1px black; */
 }
 
 h2 {
-    font-family: "Pirata One", cursive;
     font-size: xx-large;
     font-weight: 100;
-    line-height: 1.2;
 }
 
 h3 {
-    font-family: "Pirata One", cursive;
     font-size: x-large;
     font-weight: 100;
-    /* line-height: 1.2; */
 }
 
 h4 {
     margin: 0;
     padding: 20px 0;
     font-size: 20px;
-    text-align: left;
 }
 
 /* END headers */
@@ -63,14 +67,36 @@ h4 {
     padding: 0 20px 20px 20px;
 }
 
-/* .section2 p { */
-/* margin: 20 20px 20px 20px; */
-/* padding: 0 30px 30px 30px; */
-/* } */
+.section2 .content {
+    max-width: 75%;
+    margin-left: auto;
+    left: 50px;
+    right: 50px;
+    top: 0px;
+    margin-right: auto;
+    position: relative;
+    /* box-sizing: content-box; */
+}
+
+.section2 .photo-insert {
+    float: right;
+    object-fit: contain;
+}
 
 .section3 {
     background-color: #632f1e;
     color: aliceblue;
+}
+
+.section3 .content {
+    max-width: 75%;
+    margin-left: auto;
+    left: 50px;
+    right: 50px;
+    top: 0px;
+    margin-right: auto;
+    position: relative;
+    /* box-sizing: content-box; */
 }
 
 .section3 h1 {
@@ -91,17 +117,21 @@ h4 {
 }
 
 .section4 {
-    background-color: #555;
+    background-color: rgba(206, 203, 191, 0.315);
     color: #ddaa44;
 }
 
-/* body {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 0px 20px 0px;
-} */
+.section4 .content {
+    max-width: 75%;
+    margin-left: auto;
+    left: 50px;
+    right: 50px;
+    top: 0px;
+    margin-right: auto;
+    position: relative;
+    /* box-sizing: content-box; */
+}
 
-p,
 li {
     font-size: 18px;
     line-height: 1.7;
@@ -111,6 +141,9 @@ li {
 /* START images*/
 .float-right {
     float: right;
+    /* width: 30%; */
+    /* height: 30%; */
+    object-fit: contain;
 }
 
 .divider {
