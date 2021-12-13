@@ -1,88 +1,153 @@
-*,
-html {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: disc;
+}
+
+li {
     font-size: 18px;
-    /* px means "pixels": the base font size is now 10 pixels high  */
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: 20px;
     font-family: "Source Sans Pro";
-    /* this should be the rest of the output you got from Google fonts */
-    /* background-color: #da4 !important; */
     margin: 0;
     padding: 0;
 }
 
 body {
-    padding: 0 0px 20px 0px;
     line-height: 1.6;
 }
 
+
+/* START headers */
 h1, h2, h3 {
     line-height: 1.2;
     font-family: "Pirata One", cursive;
     text-align: left;
+    padding: 20px 0;
+    margin: 0;
 }
 
-/* START headers */
 h1 {
     margin: 0;
-    padding: 20px 0;
-    /* color: #da4; */
-    /* font-size: 20px; */
 }
 
 h2 {
-    font-size: xx-large;
-    font-weight: 100;
-}
-
-h3 {
     font-size: x-large;
     font-weight: 100;
 }
 
+h3 {
+    font-size: xx-large;
+    font-weight: 100;
+}
+
 h4 {
-    margin: 0;
-    padding: 20px 0;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 /* END headers */
 
-.section1 {
-    background-color: #462115;
-    max-height: 300px;
+
+/* Image class to divide sections */
+.divider {
+    width: 100%;
 }
 
-.section1 img.logo {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    object-fit: contain;
-    max-height: inherit;
+.section1 {
+    background-color: #462115;
+}
+
+.section1 .image-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.section1 img {
+    max-width: 100%;
 }
 
 .section2 {
     background-color: #da4;
-    padding: 0 20px 20px 20px;
+    /* padding: 60px 70px; */
 }
 
 .section2 .content {
-    max-width: 75%;
+    /* display: flex; */
+    max-width: 300px;
     margin-left: auto;
-    left: 50px;
-    right: 50px;
-    top: 0px;
+    /* left: 50px; */
+    /* right: 50px; */
     margin-right: auto;
-    position: relative;
+
+    /* position: relative; */
     /* box-sizing: content-box; */
 }
 
-.section2 .photo-insert {
-    float: right;
+
+.section2 .image-container {
+    display: flex;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
+    margin: 2rem;
 }
 
+/* .section2 .content .text { */
+/* } */
 .section3 {
     background-color: #632f1e;
     color: aliceblue;
@@ -132,23 +197,9 @@ h4 {
     /* box-sizing: content-box; */
 }
 
-li {
-    font-size: 18px;
-    line-height: 1.7;
-    letter-spacing: 1px;
-}
 
 /* START images*/
-.float-right {
-    float: right;
-    /* width: 30%; */
-    /* height: 30%; */
-    object-fit: contain;
-}
 
-.divider {
-    width: 100%;
-}
 
 /* END images*/
 
@@ -202,29 +253,47 @@ textarea {
 /* END form*/
 
 /* START responsive columns*/
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 /* Create two equal columns that floats next to each other */
-.column {
+/* .column {
     float: left;
     width: 50%;
     padding: 10px;
-}
+} */
 
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .column {
         width: 100%;
     }
-}
+} */
 
 /* END responsive columns*/
+
+/* tablet */
+@media only screen and (min-width: 720px) {
+    /* .section2 .content {
+        max-width: 750px;
+
+        float: right;
+    } */
+}
+
+/* desktop */
+@media only screen and (min-width: 1140px) {
+    /* .section2 .content {
+        max-width: 1600px;
+
+        float: right;
+    } */
+}
