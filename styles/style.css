@@ -1,176 +1,312 @@
-*,
-html {
-  font-size: 12px; /* px means "pixels": the base font size is now 10 pixels high  */
-  font-family: "Source Sans Pro"; /* this should be the rest of the output you got from Google fonts */
-  /* background-color: #da4 !important; */
-  margin: 0;
-  padding: 0;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-/* START headers */
-h1 {
-  margin: 0;
-  padding: 20px 0;
-  /* color: #da4; */
-  /* font-size: 20px; */
-  text-align: left;
-  /* text-shadow: 1px 1px 1px black; */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: disc;
+}
+
+li {
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: 20px;
+    font-family: "Source Sans Pro";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    font-style: normal;
+    font-weight: 400;
+    color: #333;
+}
+
+
+/* START headers */
+h1, h2, h3 {
+    line-height: 1.2;
+    font-family: "Pirata One", cursive;
+    text-align: left;
+    padding: 20px 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
 h2 {
-  font-family: "Pirata One", cursive;
-  font-size: xx-large;
-  font-weight: 100;
-  line-height: 1.2;
+    font-size: x-large;
+    font-weight: 100;
 }
 
 h3 {
-  font-family: "Pirata One", cursive;
-  font-size: x-large;
-  font-weight: 100;
-  /* line-height: 1.2; */
+    font-size: xx-large;
+    font-weight: 100;
 }
+
 h4 {
-  margin: 0;
-  padding: 20px 0;
-  font-size: 20px;
-  text-align: left;
+    font-size: 26px;
 }
+
 /* END headers */
 
-.section1 {
-  background-color: #462115;
-  max-height: 300px;
+
+/* Image class to divide sections */
+.divider {
+    width: 100%;
+    /* margin-bottom: 0 !important; */
+    /* border: 0; */
+    /* height: auto; */
+
 }
-.section1 img.logo {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  object-fit: contain;
-  max-height: inherit;
+
+.section1 {
+    background-color: #462115;
+}
+
+.section1 .image-container {
+    display: flex;
+    justify-content: center;
+    /* padding: 30px; */
+}
+
+.section1 img {
+    max-width: 350px;
+    padding: 30px;
 }
 
 .section2 {
-  background-color: #da4;
-  padding: 0 20px 20px 20px;
+    background-color: #da4;
 }
-/* .section2 p { */
-/* margin: 20 20px 20px 20px; */
-/* padding: 0 30px 30px 30px; */
-/* } */
+
+.section2 .content {
+    padding: 50px 20px;
+}
+
+
+.section2 .image-container {
+    display: flex;
+    float: right;
+}
+
+.section2 img {
+    width: 300px;
+    aspect-ratio: auto 400/400;
+    /* max-width: 100%; */
+    height: auto;
+    vertical-align: middle;
+    border: 0
+}
+
+.section2 .content ul {
+    padding-left: 1rem;
+}
 
 .section3 {
-  background-color: #632f1e;
-  color: aliceblue;
+    background-color: #632f1e;
+    color: aliceblue;
 }
+
+.section3 .content {
+    padding: 36px 20px;
+    /* max-width: 75%;
+    margin-left: auto;
+    left: 50px;
+    right: 50px;
+    top: 0px;
+    margin-right: auto;
+    position: relative; */
+    /* box-sizing: content-box; */
+}
+
+.section3 .content ul {
+    padding-left: 1rem;
+}
+
 .section3 h1 {
-  font-family: "Pirata One", cursive;
-  font-size: xxx-large;
-  font-weight: 100;
-  line-height: 1.2;
-  color: #ddaa44;
+    font-family: "Pirata One", cursive;
+    font-size: xxx-large;
+    font-weight: 100;
+    line-height: 1.2;
+    color: #ddaa44;
 }
+
 .section3 h2 {
-  color: aliceblue;
-  font-weight: normal;
+    color: aliceblue;
+    font-weight: normal;
 }
+
 .section3 h3 {
-  font-size: xx-large;
+    font-size: xx-large;
 }
+
 .section4 {
-  background-color: #555;
-  color: #ddaa44;
+    background-color: rgba(206, 203, 191, 0.315);
+    color: #ddaa44;
 }
 
-/* body {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 0px 20px 0px;
-} */
-
-p,
-li {
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: 1px;
+.section4 .content {
+    padding: 20px 20px;
+    max-width: 90%;
+    margin-left: auto;
+    /* left: 50px; */
+    /* right: 50px; */
+    /* top: 0px; */
+    /* margin-right: auto; */
+    /* position: relative; */
+    /* box-sizing: content-box; */
 }
+
 
 /* START images*/
-.float-right {
-  float: right;
-}
-.divider {
-  width: 100%;
-}
+
+
 /* END images*/
 
 /* START form*/
-form {
-  /* Left Justify */
-  /* margin: 0 auto; */
-  width: 500px;
+/* form { */
+/* Left Justify */
+/* margin: 0 auto; */
+/* width: 500px; */
+/* } */
+
+/* form li { */
+/* list-style-type: none; */
+/* margin-top: 1em; */
+/* } */
+
+/* label { */
+/* Uniform size & alignment */
+/* display: block;
+    width: 90px;
+    text-align: left;
 }
-form li {
-  list-style-type: none;
-  margin-top: 1em;
-}
-label {
-  /* Uniform size & alignment */
-  display: block;
-  width: 90px;
-  text-align: left;
-}
+
 input,
-textarea {
-  /* To make sure that all text fields have the same font settings
+textarea { */
+/* To make sure that all text fields have the same font settings
      By default, textareas have a monospace font */
-  font: 1em sans-serif;
+/* font: 1em sans-serif; */
 
-  /* Uniform text field size */
-  width: 400px;
-  box-sizing: border-box;
+/* Uniform text field size */
+/* width: 400px; */
+/* box-sizing: border-box; */
 
-  /* Match form field borders */
-  border: 1px solid #999;
+/* Match form field borders */
+/* border: 1px solid #999;
 }
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: top;
 
-  /* Provide space to type some text */
-  height: 10em;
-}
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
-}
+textarea { */
+/* Align multiline text fields with their labels */
+/* vertical-align: top; */
+
+/* Provide space to type some text */
+/* height: 10em; */
+/* } */
+
+/* .button { */
+/* Align buttons with the text fields */
+/* padding-left: 90px; */
+/* same size as the label elements */
+/* } */
+
 /* END form*/
 
 /* START responsive columns*/
-* {
-  box-sizing: border-box;
-}
+/* * {
+    box-sizing: border-box;
+} */
 
 /* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
+/* .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+} */
 
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
+/* @media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+} */
+
 /* END responsive columns*/
+
+/* tablet */
+/* @media only screen and (min-width: 720px) { */
+/* .section2 .content {
+        max-width: 750px;
+
+        float: right;
+    } */
+/* } */
+
+/* desktop */
+/* @media only screen and (min-width: 1140px) { */
+/* .section2 .content {
+        max-width: 1600px;
+
+        float: right;
+    } */
+/* } */
