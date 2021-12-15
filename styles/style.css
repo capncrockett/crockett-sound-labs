@@ -105,12 +105,11 @@ h4 {
 
 
 /* Image class to divide sections */
-.divider {
+.img-divider {
     width: 100%;
-    /* margin-bottom: 0 !important; */
-    /* border: 0; */
-    /* height: auto; */
-
+    vertical-align: middle;
+    height: auto;
+    border: 0;
 }
 
 .section1 {
