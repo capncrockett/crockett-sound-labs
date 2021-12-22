@@ -129,25 +129,16 @@ h4 {
 }
 
 .section2 .content {
-    display: flexbox;
-    flex-direction: column;
-    justify-content: center;
     padding: 40px 16px;
 }
 
 .section2 .image-container {
-    margin-left: auto;
-    margin-right: auto;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 .section2 img {
-    /* width: 300px; */
-    /* justify-content: center; */
     max-width: 80%;
-    /* height: auto; */
-    vertical-align: middle;
-    border: 0
 }
 
 .section2 .content ul {
@@ -196,7 +187,7 @@ h4 {
 }
 
 .section4 .content {
-    padding: 20px 20px;
+    padding: 20px 0 40px 0;
     max-width: 90%;
     margin-left: auto;
     font-size: 20px;
@@ -275,47 +266,57 @@ textarea { */
 /* END form*/
 
 /* START responsive columns*/
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
-/* Create two equal columns that floats next to each other */
-/* .column {
+/* Create two equal columns that float next to each other */
+.column {
     float: left;
     width: 50%;
     padding: 10px;
-} */
+}
 
 /* Clear floats after the columns */
-/* .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-} */
+}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .column {
         width: 100%;
     }
-} */
+}
 
 /* END responsive columns*/
 
 /* tablet */
-/* @media only screen and (min-width: 720px) { */
-/* .section2 .content {
-        max-width: 750px;
+@media only screen and (min-width: 720px) {
+    .section2 .content {
+        padding: 40px 16px;
+    }
 
+    .section2 .image-container {
         float: right;
-    } */
-/* } */
+        max-width: 50%;
+    }
+}
 
 /* desktop */
-/* @media only screen and (min-width: 1140px) { */
-/* .section2 .content {
-        max-width: 1600px;
+@media only screen and (min-width: 1140px) {
+    .section2 .content {
+        padding: 5% 20%;
+    }
 
+    .section2 .image-container {
         float: right;
-    } */
-/* } */
+        max-width: 40%;
+    }
+
+    .section3 .content {
+        padding: 40px 300px;
+    }
+}
