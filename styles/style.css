@@ -71,14 +71,12 @@ body {
     color: #333;
 }
 
-/* Trying to get rid of the purple... */
-/* a {
+a {
     text-decoration: none;
     text-decoration-line: none;
-    text-decoration-thickness: initial;
     text-decoration-style: initial;
     text-decoration-color: initial;
-} */
+}
 
 /* START headers */
 h1, h2, h3 {
@@ -217,8 +215,7 @@ h4 {
     padding: 60px 25px 5px 25px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+    opacity: 0.7;
     text-align: center;
     line-height: 1.3;
 }
