@@ -216,55 +216,6 @@ h4 {
 
 /* END SECTIONS */
 
-/* START form*/
-/* form { */
-/* Left Justify */
-/* margin: 0 auto; */
-/* width: 500px; */
-/* } */
-
-/* form li { */
-/* list-style-type: none; */
-/* margin-top: 1em; */
-/* } */
-
-/* label { */
-/* Uniform size & alignment */
-/* display: block;
-    width: 90px;
-    text-align: left;
-}
-
-input,
-textarea { */
-/* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
-/* font: 1em sans-serif; */
-
-/* Uniform text field size */
-/* width: 400px; */
-/* box-sizing: border-box; */
-
-/* Match form field borders */
-/* border: 1px solid #999;
-}
-
-textarea { */
-/* Align multiline text fields with their labels */
-/* vertical-align: top; */
-
-/* Provide space to type some text */
-/* height: 10em; */
-/* } */
-
-/* .button { */
-/* Align buttons with the text fields */
-/* padding-left: 90px; */
-/* same size as the label elements */
-/* } */
-
-/* END form*/
-
 /* START responsive columns*/
 * {
     box-sizing: border-box;
@@ -318,5 +269,9 @@ textarea { */
 
     .section3 .content {
         padding: 40px 300px;
+    }
+
+    .section4 .content {
+        padding: 5% 10%;
     }
 }
